@@ -5,6 +5,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Open Sans';
+	line-height: normal !important;
 }
 
 body{
@@ -54,8 +55,55 @@ header{
 #topnav .navbar-right{
 	float: right;
 }
+
+#topnav .avt .no-registr{
+	display: none;
+}
+
+#topnav .guest .registr{
+	display: none;
+}
+
+.registr a{
+	height: 56px;
+	width: 56px;
+	text-align: center;
+}
+
 #topnav .navbar-left{
 	float: left;
+}
+
+ .navbar-left ul{
+	display: block;
+	position: static;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-shadow: none;
+}
+
+.navbar-right ul{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-shadow: none;
+	background-color: #535C69;
+	border-radius: 0;
+	min-width: 70px;
+}
+
+#topnav .navbar-right ul li{
+	float: none;
+	border: none;
+}
+
+#topnav .navbar-right ul li a{
+	border: none;
+}
+
+#topnav .navbar-left>a{
+	display: none;
 }
 
 #topnav li{ 	
@@ -211,6 +259,10 @@ header{
 	font-size: 17px;
 }
 
+.more-options{
+	display: none;
+}
+
 .more-options .form-control:last-child{
 	margin-bottom: 25px;
 }
@@ -219,6 +271,10 @@ header{
 	color: #616161;
 	font-size: 14px;
 	margin: 15px 0 20px; 
+}
+
+.manager img{
+	display: none;
 }
 
 #submit-request{
@@ -296,13 +352,17 @@ header{
 	font-weight: 500;
 	height: 26px;
 	margin-right: 8px;
+	margin-bottom: 10px; 
 	padding: 2px 8px;
 	text-align: center;
 	vertical-align: middle;
 }
 
+.graf-head button:last-child{
+	margin-right: 0;
+}
 
-.graf-head button:last-child, .result .buttons-sort button:last-child{
+.result .buttons-sort button:last-child{
 	margin: 0;
 }
 
@@ -312,8 +372,8 @@ header{
 
 .button-panel{
 	border-bottom: 1px solid #EEEEEE;
-	padding: 10px 0px 20px;
-	margin: 0 0px 15px 45px;
+	padding: 0 0px 10px;
+	margin: 10px 0px 15px 45px;
 }
 
 .graf .graf-head button:hover, .buttons-sort button:hover{
@@ -458,6 +518,7 @@ header{
 	border: 1px solid #E5E5E5;
 	display: table;
 	margin-top: 20px;
+	width: 100%;
 }
 
 .hotel{
@@ -472,8 +533,11 @@ header{
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 	position: relative;
-	width: 270px;
+	width: 27.6%;/*270px;*/
 	vertical-align: top;
+	min-width: 250px;
+	max-width: 410px;
+	max-height: 
 }
 
 
@@ -681,25 +745,36 @@ vertical-align: top;
 .hotel-body{
 	float: left;
 	padding: 0 10px;
+	width: 100%;
+}
+.hotel-body>table{
+	width: 100%;
+	margin: 10px 0;
+}
+
+.hotel-body>table>tbody>tr>td{
+	border-left: 1px solid #EEEEEE;
+	padding: 0 15px;
+	width: 25%;
+}
+
+.hotel-body td{
+	vertical-align: top;
+}
+
+.hotel-body>table>tbody>tr>td:first-child{
+	border: none;
+
+}
+
+.hotel-body>table>tbody>tr{
+	margin: 15px 0;
 }
 
 .block{
-	border-left: 1px solid #EEEEEE;
 	color: #616161;
-	float: left;
-	margin: 10px 0;
-	padding: 0 15px;
-	width: 190px;
-	position: relative;
 }
 
-.block:nth-child(4){
-	width: 190px;
-}
-
-.block:first-child{
-	border: none;
-}
 
 .block table{
 	font-size: 13px; 
@@ -714,6 +789,7 @@ vertical-align: top;
 
 .block td{
 	height: 20px;
+	vertical-align: bottom;
 }
 
 .block td:last-child{
@@ -724,8 +800,8 @@ vertical-align: top;
 }
 
 .block .price{
+	display: block;
 	color: #000;
-	margin-left: 5px;
 	margin-bottom: 5px;
 	font-size: 15px;
 }
@@ -742,8 +818,17 @@ vertical-align: top;
 	font-weight: 500;
 }
 
-.block:nth-child(4) td:last-child{
+
+
+.hotel-body>table>tbody>tr:first-child>td:last-child td:last-child{
 	text-align: left;
+	padding-left: 5px;
+}
+
+.hotel-body>table>tbody>tr:first-child>td:last-child{
+	padding-right: 0;
+
+	min-width: 181px;
 }
 
 sup{
@@ -754,10 +839,7 @@ sup{
 
 .general-grade, .object-grade, .apartment-grade, .price-grade{
 	margin-top: 15px;
-	position: absolute;
-	bottom: 15px;
-	left: 0;
-	right: 0;
+	
 }
 
 .title-grade, .grade-num{
@@ -775,7 +857,7 @@ sup{
 	float: right;
 }
 
-.block .grade-area{
+.result-body .grade-area{
 	background-color: #EEEEEE;
 	width: 100%;
 }

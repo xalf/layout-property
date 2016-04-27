@@ -13,10 +13,10 @@
 </head>
 <body class="animated-content">
 	<header id="topnav" class="navbar navbar-bluegray navbar-fixed-top">
-		<div class="logo-area">
+		<a class="logo-area">
 			<div class="choise"></div>
-			<a class="brand"></a>
-		</div>
+			<div class="brand"></div>
+		</a>
 
 		<ul class="navbar-left">
 			<li>
@@ -71,7 +71,7 @@
 						<input type="text" placeholder="Enter object ID" id="object-id">
 						<button id="submit-id">SEARCH</button>
                         <div class="clearfix"></div>
-						<span>or use filters</span><hr>
+						<span class="or">or use filters</span><hr>
                         <h3>PRICE</h3>
                         <span class="irs" id="price">
                             <span class="irs">
@@ -80,11 +80,11 @@
                                     <span class="irs-line-mid"></span>
                                     <span class="irs-line-right"></span>
                                 </span>
-                                <span class="irs-min" style="visibility: visible;display: none;">10 poimds</span>
-                                <span class="irs-max" style="visibility: visible; display: block;">100 poimds</span>
-                                <span class="irs-from" style="visibility: visible; left: 0px; display: block;">10 poimds</span>
-                                <span class="irs-to" style="visibility: visible; left: 66.5px; display: block;">0 poimds</span>
-                                <span class="irs-single" style="visibility: visible; left: 20.5px; display: none;">10 — 0 poimds</span>
+                                <span class="irs-min" style="visibility: visible;display: none;">&euro;5.000</span>
+                                <span class="irs-max" style="visibility: visible; display: block;">&euro;100.000</span>
+                                <span class="irs-from" style="visibility: visible; left: 0px; display: block;">&euro;10.000</span>
+                                <span class="irs-to" style="visibility: visible; left: 66.5px; display: block;">&euro;50.000</span>
+                                <span class="irs-single" style="visibility: visible; left: 20.5px; display: none;"></span>
                                 <span class="irs-diapason" style="left: 27px; width: 66px;"></span>
                                 <span class="irs-slider from" style="left: 16px;"></span>
                                 <span class="irs-slider to last" style="left: 82px;"></span>
@@ -99,11 +99,11 @@
                                     <span class="irs-line-mid"></span>
                                     <span class="irs-line-right"></span>
                                 </span>
-                                <span class="irs-min" style="visibility: visible; display: block;">10 poimds</span>
-                                <span class="irs-max" style="visibility: visible; display: block;">100 poimds</span>
-                                <span class="irs-from" style="visibility: visible; left: 63.5px; display: none;">10 poimds</span>
-                                <span class="irs-to" style="visibility: visible; left: 111.5px; display: none;">0 poimds</span>
-                                <span class="irs-single" style="visibility: visible; left: 76px; display: block;">10 — 0 poimds</span>
+                                <span class="irs-min" style="visibility: visible; display: block;">5 m</span>
+                                <span class="irs-max" style="visibility: visible; display: block;">500 m</span>
+                                <span class="irs-from" style="visibility: visible; left: 63.5px; display: none;"></span>
+                                <span class="irs-to" style="visibility: visible; left: 111.5px; display: none;"></span>
+                                <span class="irs-single" style="visibility: visible; left: 86px; display: block;">380-400 m</span>
                                 <span class="irs-diapason" style="left: 93px; width: 45px;"></span>
                                 <span class="irs-slider from" style="left: 82px;"></span>
                                 <span class="irs-slider to last" style="left: 127px;"></span>
@@ -112,16 +112,12 @@
                         </span>
 						<h3>LOCATION</h3>
 						<select class="form-control" id="source">
-							<optgroup label="Alaskan/Hawaiian Time Zone">
-								<option value="AK">Alaska</option>
-								<option value="HI">Hawaii</option>
-							</optgroup>
-							<optgroup label="Pacific Time Zone">
-								<option value="CA">California</option>
-								<option value="NV">Nevada</option>
-								<option value="OR">Oregon</option>
-								<option value="WA">Washington</option>
-							</optgroup>
+							<option value="AK">Alaska</option>
+							<option value="HI">Hawaii</option>
+							<option value="CA">California</option>
+							<option value="NV">Nevada</option>
+							<option value="OR">Oregon</option>
+							<option value="WA">Washington</option>
 						</select>
 						<h3>PROPERTY TYPE</h3>
 						<select class="form-control" id="source">
@@ -162,7 +158,29 @@
 								<option value="WA">Washington</option>
 							</optgroup>
 						</select>
-						<h3 id="more-options">More options</h3>
+						<h3 id="more-options">More options <span class="caret"></span></h3>
+                        <div class="more-options">
+                            <h3>Жилые комплексы</h3>
+                            <select  class="form-control" name="" id="">
+                                <option value="">iii</option>
+                                <option value="">iii</option>
+                                <option value="">iii</option></select>
+                            <h3>Тип объекта</h3>
+                            <select  class="form-control" name="" id="">
+                                <option value="">iii</option>
+                                <option value="">iii</option>
+                                <option value="">iii</option></select>
+                            <h3>Тип предложения</h3>
+                            <select  class="form-control" name="" id="">
+                                <option value="">iiiiii</option>
+                                <option value="">iii</option>
+                                <option value="">iii</option></select>
+                            <h3>Тип владельца</h3>
+                            <select  class="form-control" name="" id="">
+                                <option value="">iii</option>
+                                <option value="">iii</option>
+                                <option value="">iii</option></select>
+                        </div>
 						<input type="submit" value="SEARCH">
 						<h2>Presets for</h2>
 						<button class="presets">PENSIONERS</button>
@@ -188,78 +206,442 @@
 	                        		<button>Location SCR-m<sup>2</sup></button>
 	                        		<button>Object SCR-m<sup>2</sup></button>
 	                        		<button>Complex SCR - Sea Distance</button>
+                                    <button>Objet Price-m<sup>2</sup></button>
 	                        		<button>Object Area-m<sup>2</sup></button>
 	                        		<button>Sea Distance-m<sup>2</sup></button>
-	                        		<button>Priority SCR-<sup>2</sup></button>
-	                        		<button>Objet Price-m<sup>2</sup></button>
+	                        		<button>Priority SCR-m<sup>2</sup></button>
                         		</div>
                         		<h2>Total SCR-m<sup>2</sup><small> (143 objects)</small></h2>
+
                         	</div>
+                            <div class="graf-body"></div>
+                            <hr>
+                            <div class="graf-legend">
+                                <ul>
+                                    <li>
+                                        <div class="circle">2</div>
+                                        <span>Number - rooms qty</span>
+                                    </li>
+                                    <li>
+                                        <div class="circle"></div>
+                                        <span>Size - Rating apartment</span>
+                                    </li>
+                                    <li>
+                                        <div class="circle"></div>
+                                        <span>Color - Location</span>
+                                    </li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </div>
                         </div>
                         <div class="result">
                         	<div class="result-head">
-                        		<div class="buttons-sort">
-                    				<button class="active">Reating photo</button>
-                    				<button>Total reating</button>
-                    				<button>Reating object</button>
-                    				<button>Reating complex</button>
-                    				<button>Payback</button>
-                    			</div>
                         		<h2>The nearest open house
                         			<span>All Open House</span>
                         		</h2>
+                                <div class="buttons-sort">
+                                    <button>Reating photo</button>
+                                    <button>Total reating</button>
+                                    <button>Reating object</button>
+                                    <button>Reating complex</button>
+                                    <button>Payback</button>
+                                </div>
                     			<div class="clearfix"></div>
                         	</div>
                         	<div class="result-body">
-                        		<div class="hotel">
-                        			<div class="img">
-                        				<button class="rent">For Rent</button>
-                        				<button class="sale">For Sale</button>
-                        				<div class="img-info">
-                        					<div class="left">
-                        						<span>Rating photos </span><span class="grade-num">4.2</span>
-                        						<div class="grade-area">
-                        							<div class="grade"></div>
-                        						</div>
-                        					</div>
-                        					<div class="right">
-                        						
-                        					</div>
-                        				</div>
-                        			</div>
+                                <div class="hotel-wrapper">
+                            		<div class="hotel">
+                            			<div class="img">
+                            				<button class="rent">For Rent</button>
+                            				<button class="sale">For Sale</button>
+                            				<div class="img-info">
+                            					<div class="left">
+                            						<span>Rating photos </span><span class="grade-num">4.2</span>
+                            						<div class="grade-area">
+                            							<div class="grade"></div>
+                            						</div>
+                            					</div>
+                            					<div class="right">
+                            						<img src="images/little-img.png" alt="">
+                                                    <span>10</span>
+                                                    <img src="images/little-video.png" alt="">
+                                                    <span>2</span>
+                                                    <img src="images/3D.png" alt="">
+                                                    <span>1</span>
+                            					</div>
+                            				</div>
+                            			</div>
+                                        <div class="content-hotel">
+                                            <div class="content-hotel-static">
+                                    			<div class="hotel-head">
+                                    				<ul class="info orange">
+                                    					<li>OPEN HOUSE</li>
+                                    					<li><img src="images/li3.png">12.04.16</li>
+                                    					<li><img src="images/li2.png">15:00-18:00</li>
+                                    				</ul>
+                                    				<div class="send-request">
+                                                        <button>SEND REQUEST</button>
+                                    				</div>
+                                                    <button class="view-more">VIEW MORE</button>
+                                    				<button class="compare pink-compare"><div></div>COMPARE</button>
+                                                    <div class="clearfix"></div>
+                                    			</div>
+                                    			<div class="hotel-body">
+                                    				<div class="block">
+                                    					<h4 class="title">LAS AMERICAS</h4>
+                                    					<table>
+                                    						<tr>
+                                    							<td>Adeje</td>
+                                    							<td></td>
+                                    						</tr>
+                                    						<tr>
+                                    							<td>LA001</td>
+                                    							<td></td>
+                                    						</tr>
+                                    						<tr>
+                                    							<td>Publish:</td>
+                                    							<td>7h</td>
+                                    						</tr>
+                                    						<tr>
+                                    							<td>Views:</td>
+                                    							<td>8</td>
+                                    						</tr>
+                                    					</table>
+                                    					<div class="general-grade">
+                                                            <span class="title-grade">Total SCR</span>
+                                                            <span class="grade-num">5,3</span>
+                                                            <div class="clearfix"></div>
+                                                            <div class="grade-area">
+                                                                <div class="grade"></div>
+                                                            </div>
+                                                        </div>
+                                    				</div>
+                                    				<div class="block">
+                                    					<h4 class="title">EL CORDONES</h4>
+                                    					<table>
+                                    						<tr>
+                                    							<td>Beach:</td>
+                                    							<td>300m</td>
+                                    						</tr>
+                                    						<tr>
+                                    							<td>Walk Scope:</td>
+                                    							<td>65</td>
+                                    						</tr>
+                                    						<tr>
+                                    							<td>Area:</td>
+                                    							<td>1,5ga</td>
+                                    						</tr>
+                                    						<tr>
+                                    							<td>Sw.Pool:</td>
+                                    							<td>0,03ga</td>
+                                    						</tr>
+                                    					</table>
+                                                        <div class="object-grade">
+                                                            <span class="title-grade">Total SCR</span>
+                                                            <span class="grade-num">5,3</span>
+                                                            <div class="clearfix"></div>
+                                                            <div class="grade-area">
+                                                                <div class="grade"></div>
+                                                            </div>
+                                                        </div>
+                                    				</div>
+                                    				<div class="block">
+                                    					<h4 class="title">1 BED APARTMENT</h4>
+                                    					<table>
+                                    						<tr>
+                                    							<td>Sea view</td>
+                                    							<td></td>
+                                    						</tr>
+                                    						<tr>
+                                    							<td>Total area:</td>
+                                    							<td>54m<sup>2</sup></td>
+                                    						</tr>
+                                    						<tr>
+                                    							<td>Terrace:</td>
+                                    							<td>15m<sup>2</sup></td>
+                                    						</tr>
+                                    						<tr>
+                                    							<td>Bed room:</td>
+                                    							<td>21m<sup>2</sup></td>
+                                    						</tr>
+                                    					</table>
+                                                        <div class="apartment-grade">
+                                                            <span class="title-grade">Total SCR</span>
+                                                            <span class="grade-num">5,3</span>
+                                                            <div class="clearfix"></div>
+                                                            <div class="grade-area">
+                                                                <div class="grade"></div>
+                                                            </div>
+                                                        </div>
+                                    				</div>
+                                    				<div class="block">
+                                    					<table>
+            	                        					<tr>
+            	                        						<td>
+            	                        							<h4 class="title">ASK PRICE </h4>
+            	                        						</td>
+            	                        						<td>
+            	                        							<span class="price">243,000 &euro;</span>
+            	                        						</td>
+            	                        					</tr>
+                                    						<tr>
+                                    							<td>Price M2:</td>
+                                    							<td>3120 &euro;</td>
+                                    						</tr>
+                                    						<tr>
+                                    							<td>Old Price:</td>
+                                    							<td>255,000 &euro; <span class="minus-red">(-7%)</span></td>
+                                    						</tr>
+                                    						<tr>
+                                    							<td>Bid Price:</td>
+                                    							<td>210,000 &euro;</td>
+                                    						</tr>
+                                    						<tr>
+                                    							<td>Sale Status:</td>
+                                    							<td class="fast-red">Fast Sale</td>
+                                    						</tr>
+                                    					</table>
+                                                        <div class="price-grade">
+                                                            <span class="title-grade">Total SCR</span>
+                                                            <span class="grade-num">7%</span>
+                                                            <div class="clearfix"></div>
+                                                            <div class="grade-area">
+                                                                <div class="grade"></div>
+                                                            </div>
+                                                        </div>
+                                    				</div>
+                                    				<div class="clearfix"></div>
+                                    			</div>
+                                            </div>
+                                        </div>
+                            			<div class="clearfix"></div>
+                            		</div>
+                                </div>
+                                <div class="hotel-wrapper">
+                                    <div class="hotel">
+                                        <div class="img">
+                                            <button class="rent">For Rent</button>
+                                            <button class="sale">For Sale</button>
+                                            <div class="img-info">
+                                                <div class="left">
+                                                    <span>Rating photos </span><span class="grade-num">4.2</span>
+                                                    <div class="grade-area">
+                                                        <div class="grade"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="right">
+                                                    <img src="images/little-img.png" alt="">
+                                                    <span>10</span>
+                                                    <img src="images/little-video.png" alt="">
+                                                    <span>2</span>
+                                                    <img src="images/3D.png" alt="">
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-hotel">
+                                            <div class="content-hotel-static">
+                                                <div class="hotel-head">
+                                                    <ul class="info yellow">
+                                                        <li>OPEN HOUSE</li>
+                                                        <li><img src="images/li3.png">12.04.16</li>
+                                                        <li><img src="images/li2.png">15:00-18:00</li>
+                                                    </ul>
+                                                    <div class="send-request">
+                                                        <button>SEND REQUEST</button>
+                                                    </div>
+                                                    <button class="view-more">VIEW MORE</button>
+                                                    <button class="compare white-compare"><div></div>COMPARE</button>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="hotel-body">
+                                                    <div class="block">
+                                                        <h4 class="title">LAS AMERICAS</h4>
+                                                        <table>
+                                                            <tr>
+                                                                <td>Adeje</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>LA001</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Publish:</td>
+                                                                <td>7h</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Views:</td>
+                                                                <td>8</td>
+                                                            </tr>
+                                                        </table>
+                                                        <div class="general-grade">
+                                                            <span class="title-grade">Total SCR</span>
+                                                            <span class="grade-num">5,3</span>
+                                                            <div class="clearfix"></div>
+                                                            <div class="grade-area">
+                                                                <div class="grade"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="block">
+                                                        <h4 class="title">EL CORDONES</h4>
+                                                        <table>
+                                                            <tr>
+                                                                <td>Beach:</td>
+                                                                <td>300m</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Walk Scope:</td>
+                                                                <td>65</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Area:</td>
+                                                                <td>1,5ga</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Sw.Pool:</td>
+                                                                <td>0,03ga</td>
+                                                            </tr>
+                                                        </table>
+                                                        <div class="object-grade">
+                                                            <span class="title-grade">Total SCR</span>
+                                                            <span class="grade-num">5,3</span>
+                                                            <div class="clearfix"></div>
+                                                            <div class="grade-area">
+                                                                <div class="grade"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="block">
+                                                        <h4 class="title">1 BED APARTMENT</h4>
+                                                        <table>
+                                                            <tr>
+                                                                <td>Sea view</td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Total area:</td>
+                                                                <td>54m<sup>2</sup></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Terrace:</td>
+                                                                <td>15m<sup>2</sup></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bed room:</td>
+                                                                <td>21m<sup>2</sup></td>
+                                                            </tr>
+                                                        </table>
+                                                        <div class="apartment-grade">
+                                                            <span class="title-grade">Total SCR</span>
+                                                            <span class="grade-num">5,3</span>
+                                                            <div class="clearfix"></div>
+                                                            <div class="grade-area">
+                                                                <div class="grade"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="block">
+                                                        <table>
+                                                            <tr>
+                                                                <td>
+                                                                    <h4 class="title">ASK PRICE</h4>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="price">243,000 &euro;</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Price M2:</td>
+                                                                <td>3120 &euro;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Old Price:</td>
+                                                                <td>255,000 &euro; <span class="plus-green">(+4%)</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Bid Price:</td>
+                                                                <td>210,000 &euro;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Sale Status:</td>
+                                                                <td class="normal-grey">Normal</td>
+                                                            </tr>
+                                                        </table>
+                                                        <div class="price-grade">
+                                                            <span class="title-grade">Total SCR</span>
+                                                            <span class="grade-num">7%</span>
+                                                            <div class="clearfix"></div>
+                                                            <div class="grade-area">
+                                                                <div class="grade"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="hotel">
+                                    <div class="img">
+                                        <button class="rent">For Rent</button>
+                                        <button class="sale">For Sale</button>
+                                        <div class="img-info">
+                                            <div class="left">
+                                                <span>Rating photos </span><span class="grade-num">4.2</span>
+                                                <div class="grade-area">
+                                                    <div class="grade"></div>
+                                                </div>
+                                            </div>
+                                            <div class="right">
+                                                <img src="images/little-img.png" alt="">
+                                                <span>10</span>
+                                                <img src="images/little-video.png" alt="">
+                                                <span>2</span>
+                                                <img src="images/3D.png" alt="">
+                                                <span>1</span>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                        			<div class="hotel-head">
-                        				<ul class="info">
-                        					<li>OPEN HOUSE</li>
-                        					<li><img src="images/li3.png">12.04.16</li>
-                        					<li><img src="images/li2.png">15:00-18:00</li>
-                        				</ul>
-                        				<button class="send-request">Send request</button>
-                        				<button class="view-more">VIEW MORE</button>
-                        				<button class="compare">COMPARE</button>
-                        			</div>
-                        			<div class="hotel-body">
-                        				<div class="block">
-                        					<h4 class="title">LAS AMERICAS</h4>
-                        					<table>
-                        						<tr>
-                        							<td>Adeje</td>
-                        							<td></td>
-                        						</tr>
-                        						<tr>
-                        							<td>LA001</td>
-                        							<td></td>
-                        						</tr>
-                        						<tr>
-                        							<td>Publish:</td>
-                        							<td>7h</td>
-                        						</tr>
-                        						<tr>
-                        							<td>Views:</td>
-                        							<td>8</td>
-                        						</tr>
-                        					</table>
-                        					<div class="general-grade">
+                                    <div class="hotel-head">
+                                        <ul class="info orange">
+                                            <li>OPEN HOUSE</li>
+                                            <li><img src="images/li3.png">12.04.16</li>
+                                            <li><img src="images/li2.png">15:00-18:00</li>
+                                        </ul>
+                                        <div class="send-request">
+                                            <button>SEND REQUEST</button>
+                                        </div>
+                                        <button class="view-more">VIEW MORE</button>
+                                        <button class="compare pink-compare"><div></div>COMPARE</button>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="hotel-body">
+                                        <div class="block">
+                                            <h4 class="title">LAS AMERICAS</h4>
+                                            <table>
+                                                <tr>
+                                                    <td>Adeje</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>LA001</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Publish:</td>
+                                                    <td>7h</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Views:</td>
+                                                    <td>8</td>
+                                                </tr>
+                                            </table>
+                                            <div class="general-grade">
                                                 <span class="title-grade">Total SCR</span>
                                                 <span class="grade-num">5,3</span>
                                                 <div class="clearfix"></div>
@@ -267,27 +649,27 @@
                                                     <div class="grade"></div>
                                                 </div>
                                             </div>
-                        				</div>
-                        				<div class="block">
-                        					<h4 class="title">EL CORDONES</h4>
-                        					<table>
-                        						<tr>
-                        							<td>Beach:</td>
-                        							<td>300m</td>
-                        						</tr>
-                        						<tr>
-                        							<td>Walk Scope:</td>
-                        							<td>65</td>
-                        						</tr>
-                        						<tr>
-                        							<td>Area:</td>
-                        							<td>1,5ga</td>
-                        						</tr>
-                        						<tr>
-                        							<td>Sw.Pool:</td>
-                        							<td>0,03ga</td>
-                        						</tr>
-                        					</table>
+                                        </div>
+                                        <div class="block">
+                                            <h4 class="title">EL CORDONES</h4>
+                                            <table>
+                                                <tr>
+                                                    <td>Beach:</td>
+                                                    <td>300m</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Walk Scope:</td>
+                                                    <td>65</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Area:</td>
+                                                    <td>1,5ga</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sw.Pool:</td>
+                                                    <td>0,03ga</td>
+                                                </tr>
+                                            </table>
                                             <div class="object-grade">
                                                 <span class="title-grade">Total SCR</span>
                                                 <span class="grade-num">5,3</span>
@@ -296,27 +678,35 @@
                                                     <div class="grade"></div>
                                                 </div>
                                             </div>
-                        				</div>
-                        				<div class="block">
-                        					<h4 class="title">1 BED APARTMENT</h4>
-                        					<table>
-                        						<tr>
-                        							<td>Sea view</td>
-                        							<td></td>
-                        						</tr>
-                        						<tr>
-                        							<td>Total area:</td>
-                        							<td>54m<sup>2</sup></td>
-                        						</tr>
-                        						<tr>
-                        							<td>Terrace:</td>
-                        							<td>15m<sup>2</sup></td>
-                        						</tr>
-                        						<tr>
-                        							<td>Bed room:</td>
-                        							<td>21m<sup>2</sup></td>
-                        						</tr>
-                        					</table>
+                                        </div>
+                                        <div class="block">
+                                            <h4 class="title">1 BED APARTMENT</h4>
+                                            <table>
+                                                <tr>
+                                                    <td>Sea view</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Total area:</td>
+                                                    <td>54m<sup>2</sup></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terrace:</td>
+                                                    <td>15m<sup>2</sup></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1 Bed room:</td>
+                                                    <td>21m<sup>2</sup></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2 Bed room:</td>
+                                                    <td>21m<sup>2</sup></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3 Bed room:</td>
+                                                    <td>21m<sup>2</sup></td>
+                                                </tr>
+                                            </table>
                                             <div class="apartment-grade">
                                                 <span class="title-grade">Total SCR</span>
                                                 <span class="grade-num">5,3</span>
@@ -325,34 +715,34 @@
                                                     <div class="grade"></div>
                                                 </div>
                                             </div>
-                        				</div>
-                        				<div class="block">
-                        					<table>
-	                        					<tr>
-	                        						<td>
-	                        							<h4 class="title">ASK PRICE </h4>
-	                        						</td>
-	                        						<td>
-	                        							<span class="price">243,000 &euro;</span>
-	                        						</td>
-	                        					</tr>
-                        						<tr>
-                        							<td>Price M2:</td>
-                        							<td>3120 &euro;</td>
-                        						</tr>
-                        						<tr>
-                        							<td>Old Price:</td>
-                        							<td>255,000 &euro;</td>
-                        						</tr>
-                        						<tr>
-                        							<td>Bid Price:</td>
-                        							<td>210,000 &euro;</td>
-                        						</tr>
-                        						<tr>
-                        							<td>Sale Status:</td>
-                        							<td>Fast Sale</td>
-                        						</tr>
-                        					</table>
+                                        </div>
+                                        <div class="block">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <h4 class="title">ASK PRICE </h4>
+                                                    </td>
+                                                    <td>
+                                                        <span class="price">243,000 &euro;</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Price M2:</td>
+                                                    <td>3120 &euro;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Old Price:</td>
+                                                    <td>255,000 &euro;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bid Price:</td>
+                                                    <td>210,000 &euro;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sale Status:</td>
+                                                    <td class="fast-red">Fast Sale</td>
+                                                </tr>
+                                            </table>
                                             <div class="price-grade">
                                                 <span class="title-grade">Total SCR</span>
                                                 <span class="grade-num">7%</span>
@@ -361,11 +751,174 @@
                                                     <div class="grade"></div>
                                                 </div>
                                             </div>
-                        				</div>
-                        				<div class="clearfix"></div>
-                        			</div>
-                        			<div class="clearfix"></div>
-                        		</div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="hotel">
+                                    <div class="img">
+                                        <button class="rent">For Rent</button>
+                                        <button class="sale">For Sale</button>
+                                        <div class="img-info">
+                                            <div class="left">
+                                                <span>Rating photos </span><span class="grade-num">4.2</span>
+                                                <div class="grade-area">
+                                                    <div class="grade"></div>
+                                                </div>
+                                            </div>
+                                            <div class="right">
+                                                <img src="images/little-img.png" alt="">
+                                                <span>10</span>
+                                                <img src="images/little-video.png" alt="">
+                                                <span>2</span>
+                                                <img src="images/3D.png" alt="">
+                                                <span>1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hotel-head">
+                                        <ul class="info green">
+                                            <li>OPEN HOUSE</li>
+                                            <li><img src="images/li3.png">12.04.16</li>
+                                            <li><img src="images/li2.png">15:00-18:00</li>
+                                        </ul>
+                                        <div class="send-request">
+                                            <button>SEND REQUEST</button>
+                                        </div>
+                                        <button class="view-more">VIEW MORE</button>
+                                        <button class="compare green-compare"><div></div>COMPARE</button>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="hotel-body">
+                                        <div class="block">
+                                            <h4 class="title">LAS AMERICAS</h4>
+                                            <table>
+                                                <tr>
+                                                    <td>Adeje</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>LA001</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Publish:</td>
+                                                    <td>7h</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Views:</td>
+                                                    <td>8</td>
+                                                </tr>
+                                            </table>
+                                            <div class="general-grade">
+                                                <span class="title-grade">Total SCR</span>
+                                                <span class="grade-num">5,3</span>
+                                                <div class="clearfix"></div>
+                                                <div class="grade-area">
+                                                    <div class="grade"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block">
+                                            <h4 class="title">EL CORDONES</h4>
+                                            <table>
+                                                <tr>
+                                                    <td>Beach:</td>
+                                                    <td>300m</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Walk Scope:</td>
+                                                    <td>65</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Area:</td>
+                                                    <td>1,5ga</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sw.Pool:</td>
+                                                    <td>0,03ga</td>
+                                                </tr>
+                                            </table>
+                                            <div class="object-grade">
+                                                <span class="title-grade">Total SCR</span>
+                                                <span class="grade-num">5,3</span>
+                                                <div class="clearfix"></div>
+                                                <div class="grade-area">
+                                                    <div class="grade"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block">
+                                            <h4 class="title">1 BED APARTMENT</h4>
+                                            <table>
+                                                <tr>
+                                                    <td>Sea view</td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Total area:</td>
+                                                    <td>54m<sup>2</sup></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terrace:</td>
+                                                    <td>15m<sup>2</sup></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bed room:</td>
+                                                    <td>21m<sup>2</sup></td>
+                                                </tr>
+                                            </table>
+                                            <div class="apartment-grade">
+                                                <span class="title-grade">Total SCR</span>
+                                                <span class="grade-num">5,3</span>
+                                                <div class="clearfix"></div>
+                                                <div class="grade-area">
+                                                    <div class="grade"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="block">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <h4 class="title">ASK PRICE </h4>
+                                                    </td>
+                                                    <td>
+                                                        <span class="price">243,000 &euro;</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Price M2:</td>
+                                                    <td>3120 &euro;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Old Price:</td>
+                                                    <td>255,000 &euro; <span class="minus-red">(-7%)</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bid Price:</td>
+                                                    <td>210,000 &euro;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sale Status:</td>
+                                                    <td class="fast-red">Fast Sale</td>
+                                                </tr>
+                                            </table>
+                                            <div class="price-grade">
+                                                <span class="title-grade">Total SCR</span>
+                                                <span class="grade-num">7%</span>
+                                                <div class="clearfix"></div>
+                                                <div class="grade-area">
+                                                    <div class="grade"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
                         	</div>
                         </div>
                     </div>
