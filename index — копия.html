@@ -10,10 +10,13 @@
 	<link rel="stylesheet" type="text/css" href="style2.css">
     <link rel="stylesheet" media="only screen and (max-width:1270px)" href="style-adaptive-1270.css"/>
     <link rel="stylesheet" media="only screen and (max-width:1150px)" href="style-adaptive-1135.css"/>
+    <link rel="stylesheet" media="only screen and (max-width:850px)" href="style-adaptive-850.css"/>
+    <link rel="stylesheet" media="only screen and (max-width:640px)" href="style-adaptive-635.css"/>
     <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body class="animated-content">
+    <!-- header -->
 	<header id="topnav" class="navbar navbar-bluegray navbar-fixed-top">
 		<a class="logo-area">
 			<div class="choise"></div>
@@ -50,10 +53,9 @@
 				</a>
                 <ul class="dropdown-menu" role="menu">
                     <li role="presentation">
-                        <a href="" role="menuitem" tab-index="-1" target="_blank">vdd</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="" role="menuitem"  tab-index="-1" target="_blank">vdd</a>
+                        <a href="" role="menuitem" tab-index="-1" target="_blank">
+                            <img src="images/flagRU.png" alt="">
+                        </a>
                     </li>
                 </ul>
 			</li>
@@ -69,9 +71,12 @@
 	        </li>
 		</ul>
 	</header>
-
+    <!-- /header -->
+    <!-- wrapper таблица-->
 	<div id="wrapper">
+        <!-- строка -->
 	    <div id="layout-static">
+            <!-- область сайдбара - ячейка -->
 	        <div class="static-sidebar-wrapper">
 	            <div class="static-sidebar">
 					<div class="sidebar">
@@ -203,23 +208,30 @@
     						<button class="presets">YOUNG FAMILY</button>
     						<button class="presets">WEALTHY</button>
                         </div>
-                        <div class="second-column manager">
-                            <img src="images/malecostume.png" alt="">
-    						<h2>Request for manager</h2>
-    						<p>Our manager will pick the best deals for you.</p>
-    						<input type="submit" id="submit-request" value="SUBMIT REQUEST">
+                        <div class="second-column">
+                            <div class="manager">
+                                <img src="images/malecostume.png" alt="">
+                                <h2>Request for manager</h2>
+                                <p>Our manager will pick the best deals for you.</p>
+                                <input type="submit" id="submit-request" value="SUBMIT REQUEST">
+                                <div class="clearfix"></div>
+                            </div>
                         </div>
                         <div class="clearfix"></div>
 					</div>
 	            </div>
 	        </div>
+            <!-- /область сайдбара - ячейка -->
+            <!-- область контента - ячейка -->
             <div class="static-content-wrapper">
                 <div class="static-content">
                     <div class="page-content">
                         <div class="logo-h">
                         	<h1>Agency Avelta Group</h1>
                         </div>
+                        <!-- график -->
                         <div class="graf">
+                            <!-- уравление графиком -->
                         	<div class="graf-head">
                         		<div class="button-panel">
 	                        		<button>Total SCR-m<sup>2</sup></button>
@@ -231,11 +243,17 @@
 	                        		<button>Sea Distance-m<sup>2</sup></button>
 	                        		<button>Priority SCR-m<sup>2</sup></button>
                         		</div>
-                        		<h2>Total SCR-m<sup>2</sup><small> (143 objects)</small></h2>
-
+                        		<button class="clear">CLEAR</button>
+                                <div class="buttons-sort">
+                                    <button>Objects</button>
+                                    <button>Compare</button>
+                                </div>
+                                <h2>Total SCR-m<sup>2</sup><small> (143 objects)</small></h2>
                         	</div>
+                            <!-- /управление графиком -->
                             <div class="graf-body"></div>
                             <hr>
+                            <!-- легенда -->
                             <div class="graf-legend">
                                 <ul>
                                     <li>
@@ -253,8 +271,12 @@
                                 </ul>
                                 <div class="clearfix"></div>
                             </div>
+                            <!-- /легенда -->
                         </div>
+                        <!-- /график -->
+                        <!-- отображение и работа с выборкой -->
                         <div class="result">
+                            <!-- управление поиском -->
                         	<div class="result-head">
                         		<h2>The nearest open house
                         			<span>All Open House</span>
@@ -268,10 +290,13 @@
                                 </div>
                     			<div class="clearfix"></div>
                         	</div>
+                            <!-- /управление поиском -->
+                            <!-- результаты поиска -->
                         	<div class="result-body">
-                                
+                                <!-- полоса один отель -->
                                 <div class="hotel-wrapper">
                                     <div class="hotel">
+                                        <!-- фото отеля -->
                                         <div class="img">
                                             <button class="rent">For Rent</button>
                                             <button class="sale">For Sale</button>
@@ -292,11 +317,13 @@
                                                 </div>
                                             </div>
                                         </div>
-
+                                        <!-- /фото отеля -->
+                                        <!-- о отеле -->
                                         <div class="content-hotel">
                                             <div class="content-hotel-static">
+                                                <!-- шапка отеля -->
                                                 <div class="hotel-head">
-                                                    <ul class="info green">
+                                                    <ul class="info orange">
                                                         <li>OPEN HOUSE</li>
                                                         <li><img src="images/li3.png">12.04.16</li>
                                                         <li><img src="images/li2.png">15:00-18:00</li>
@@ -305,11 +332,491 @@
                                                         <button>SEND REQUEST</button>
                                                     </div>
                                                     <button class="view-more">VIEW MORE</button>
-                                                    <button class="compare green-compare"><div></div>COMPARE</button>
+                                                    <button class="compare pink-compare"><div></div>COMPARE</button>
                                                     <div class="clearfix"></div>
                                                 </div>
+                                                <!-- /шапка отеля -->
                                                 <div class="hotel-body">
                                                     <table>
+                                                        <!-- информация -->
+                                                        <tr>
+                                                            <td>
+                                                                <div class="block">
+                                                                    <h4 class="title">LAS AMERICAS</h4>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>Adeje</td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>LA001</td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Publish:</td>
+                                                                            <td>7h</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Views:</td>
+                                                                            <td>8</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="block">
+                                                                    <h4 class="title">EL CORDONES</h4>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>Beach:</td>
+                                                                            <td>300m</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Walk Scope:</td>
+                                                                            <td>65</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Area:</td>
+                                                                            <td>1,5ga</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Sw.Pool:</td>
+                                                                            <td>0,03ga</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="block">
+                                                                    <h4 class="title">1 BED APARTMENT</h4>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>Sea view</td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Total area:</td>
+                                                                            <td>54m<sup>2</sup></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Terrace:</td>
+                                                                            <td>15m<sup>2</sup></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Bed room:</td>
+                                                                            <td>21m<sup>2</sup></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="block">
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <h4 class="title">ASK PRICE </h4>
+                                                                            </td>
+                                                                            <td>
+                                                                                <span class="price">243,000 &euro;</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Price M2:</td>
+                                                                            <td>3120 &euro;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Old Price:</td>
+                                                                            <td>255,000 &euro; <span class="minus-red">(-7%)</span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Bid Price:</td>
+                                                                            <td>210,000 &euro;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Sale Status:</td>
+                                                                            <td class="fast-red">Fast Sale</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <!-- /информация -->
+                                                        <!-- баллы -->
+                                                        <tr>
+                                                            <td>
+                                                                <div class="general-grade">
+                                                                    <span class="title-grade">Total SCR</span>
+                                                                    <span class="grade-num">5,3</span>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="grade-area">
+                                                                        <div class="grade"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="object-grade">
+                                                                    <span class="title-grade">Total SCR</span>
+                                                                    <span class="grade-num">5,3</span>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="grade-area">
+                                                                        <div class="grade"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="apartment-grade">
+                                                                    <span class="title-grade">Total SCR</span>
+                                                                    <span class="grade-num">5,3</span>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="grade-area">
+                                                                        <div class="grade"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="price-grade">
+                                                                    <span class="title-grade">Total SCR</span>
+                                                                    <span class="grade-num">7%</span>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="grade-area">
+                                                                        <div class="grade"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <!-- /баллы -->
+                                                    </table>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                        <!-- /о отеле -->
+                                        <!-- mobile -->
+                                        <div class="mobile" style="display:none;">
+                                            <div class="block">
+                                                <h4 class="title">LAS AMERICAS</h4>
+                                                <table>
+                                                    <tr>
+                                                        <td>Adeje</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LA001</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Publish:</td>
+                                                        <td>7h</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Views:</td>
+                                                        <td>8</td>
+                                                    </tr>
+                                                </table>
+                                                <div class="price-grade">
+                                                    <span class="title-grade">Total SCR</span>
+                                                    <span class="grade-num">7%</span>
+                                                    <div class="clearfix"></div>
+                                                    <div class="grade-area">
+                                                        <div class="grade"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- mobile -->
+                                    </div>
+                            	</div>
+                                <!-- полоса один отель -->
+
+                                <!-- полоса один отель -->
+                                <div class="hotel-wrapper">
+                                    <div class="hotel">
+                                        <!-- фото отеля -->
+                                        <div class="img">
+                                            <button class="rent">For Rent</button>
+                                            <button class="sale">For Sale</button>
+                                            <div class="img-info">
+                                                <div class="left">
+                                                    <span>Rating photos </span><span class="grade-num">4.2</span>
+                                                    <div class="grade-area">
+                                                        <div class="grade"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="right">
+                                                    <img src="images/little-img.png" alt="">
+                                                    <span>10</span>
+                                                    <img src="images/little-video.png" alt="">
+                                                    <span>2</span>
+                                                    <img src="images/3D.png" alt="">
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /фото отеля -->
+                                        <!-- о отеле -->
+                                        <div class="content-hotel">
+                                            <div class="content-hotel-static">
+                                                <!-- шапка отеля -->
+                                                <div class="hotel-head">
+                                                    <ul class="info yellow">
+                                                        <li>OPEN HOUSE</li>
+                                                        <li><img src="images/li3.png">12.04.16</li>
+                                                        <li><img src="images/li2.png">15:00-18:00</li>
+                                                    </ul>
+                                                    <div class="send-request">
+                                                        <button>SEND REQUEST</button>
+                                                    </div>
+                                                    <button class="view-more">VIEW MORE</button>
+                                                    <button class="compare white-compare"><div></div>COMPARE</button>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <!-- /шапка отеля -->
+                                                <div class="hotel-body">
+                                                    <table>
+                                                        <!-- информация -->
+                                                        <tr>
+                                                            <td>
+                                                                <div class="block">
+                                                                    <h4 class="title">LAS AMERICAS</h4>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>Adeje</td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>LA001</td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Publish:</td>
+                                                                            <td>7h</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Views:</td>
+                                                                            <td>8</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="block">
+                                                                    <h4 class="title">EL CORDONES</h4>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>Beach:</td>
+                                                                            <td>300m</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Walk Scope:</td>
+                                                                            <td>65</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Area:</td>
+                                                                            <td>1,5ga</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Sw.Pool:</td>
+                                                                            <td>0,03ga</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="block">
+                                                                    <h4 class="title">1 BED APARTMENT</h4>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>Sea view</td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Total area:</td>
+                                                                            <td>54m<sup>2</sup></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Terrace:</td>
+                                                                            <td>15m<sup>2</sup></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Bed room:</td>
+                                                                            <td>21m<sup>2</sup></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Bed room:</td>
+                                                                            <td>21m<sup>2</sup></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="block">
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <h4 class="title">ASK PRICE </h4>
+                                                                            </td>
+                                                                            <td>
+                                                                                <span class="price">243,000 &euro;</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Price M2:</td>
+                                                                            <td>3120 &euro;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Old Price:</td>
+                                                                            <td>255,000 &euro; <span class="plus-green">(+4%)</span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Bid Price:</td>
+                                                                            <td>210,000 &euro;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Sale Status:</td>
+                                                                            <td>Normal</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <!-- /информация -->
+                                                        <!-- баллы -->
+                                                        <tr>
+                                                            <td>
+                                                                <div class="general-grade">
+                                                                    <span class="title-grade">Total SCR</span>
+                                                                    <span class="grade-num">5,3</span>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="grade-area">
+                                                                        <div class="grade"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="object-grade">
+                                                                    <span class="title-grade">Total SCR</span>
+                                                                    <span class="grade-num">5,3</span>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="grade-area">
+                                                                        <div class="grade"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="apartment-grade">
+                                                                    <span class="title-grade">Total SCR</span>
+                                                                    <span class="grade-num">5,3</span>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="grade-area">
+                                                                        <div class="grade"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="price-grade">
+                                                                    <span class="title-grade">Total SCR</span>
+                                                                    <span class="grade-num">7%</span>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="grade-area">
+                                                                        <div class="grade"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <!-- /баллы -->
+                                                    </table>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                        <!-- /о отеле -->
+                                        <!-- mobile -->
+                                        <div class="mobile" style="display:none;">
+                                            <div class="block">
+                                                <h4 class="title">LAS AMERICAS</h4>
+                                                <table>
+                                                    <tr>
+                                                        <td>Adeje</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LA001</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Publish:</td>
+                                                        <td>7h</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Views:</td>
+                                                        <td>8</td>
+                                                    </tr>
+                                                </table>
+                                                <div class="price-grade">
+                                                    <span class="title-grade">Total SCR</span>
+                                                    <span class="grade-num">7%</span>
+                                                    <div class="clearfix"></div>
+                                                    <div class="grade-area">
+                                                        <div class="grade"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- mobile -->
+                                    </div>
+                                </div>
+                                <!-- полоса один отель -->
+
+                                <!-- полоса один отель -->
+                                <div class="hotel-wrapper">
+                                    <div class="hotel">
+                                        <!-- фото отеля -->
+                                        <div class="img">
+                                            <button class="rent">For Rent</button>
+                                            <button class="sale">For Sale</button>
+                                            <div class="img-info">
+                                                <div class="left">
+                                                    <span>Rating photos </span><span class="grade-num">4.2</span>
+                                                    <div class="grade-area">
+                                                        <div class="grade"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="right">
+                                                    <img src="images/little-img.png" alt="">
+                                                    <span>10</span>
+                                                    <img src="images/little-video.png" alt="">
+                                                    <span>2</span>
+                                                    <img src="images/3D.png" alt="">
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /фото отеля -->
+                                        <!-- о отеле -->
+                                        <div class="content-hotel">
+                                            <div class="content-hotel-static">
+                                                <!-- шапка отеля -->
+                                                <div class="hotel-head">
+                                                    <ul class="info yellow">
+                                                        <li>OPEN HOUSE</li>
+                                                        <li><img src="images/li3.png">12.04.16</li>
+                                                        <li><img src="images/li2.png">15:00-18:00</li>
+                                                    </ul>
+                                                    <div class="send-request">
+                                                        <button>SEND REQUEST</button>
+                                                    </div>
+                                                    <button class="view-more">VIEW MORE</button>
+                                                    <button class="compare white-compare"><div></div>COMPARE</button>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <!-- /шапка отеля -->
+                                                <div class="hotel-body">
+                                                    <table>
+                                                        <!-- информация -->
                                                         <tr>
                                                             <td>
                                                                 <div class="block">
@@ -385,10 +892,6 @@
                                                                             <td>Bed room:</td>
                                                                             <td>21m<sup>2</sup></td>
                                                                         </tr>
-                                                                        <tr>
-                                                                            <td>Bed room:</td>
-                                                                            <td>21m<sup>2</sup></td>
-                                                                        </tr>
                                                                     </table>
                                                                     
                                                                 </div>
@@ -410,7 +913,7 @@
                                                                         </tr>
                                                                         <tr>
                                                                             <td>Old Price:</td>
-                                                                            <td>255,000 &euro; <span class="minus-red">(-7%)</span></td>
+                                                                            <td>255,000 &euro;</td>
                                                                         </tr>
                                                                         <tr>
                                                                             <td>Bid Price:</td>
@@ -425,6 +928,8 @@
                                                                 </div>
                                                             </td>
                                                         </tr>
+                                                        <!-- /информация -->
+                                                        <!-- баллы -->
                                                         <tr>
                                                             <td>
                                                                 <div class="general-grade">
@@ -467,19 +972,304 @@
                                                                 </div>
                                                             </td>
                                                         </tr>
+                                                        <!-- /баллы -->
                                                     </table>
                                                 </div>
                                                 <div class="clearfix"></div>
                                             </div>
                                         </div>
+                                        <!-- /о отеле -->
+                                        <!-- mobile -->
+                                        <div class="mobile" style="display:none;">
+                                            <div class="block">
+                                                <h4 class="title">LAS AMERICAS</h4>
+                                                <table>
+                                                    <tr>
+                                                        <td>Adeje</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LA001</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Publish:</td>
+                                                        <td>7h</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Views:</td>
+                                                        <td>8</td>
+                                                    </tr>
+                                                </table>
+                                                <div class="price-grade">
+                                                    <span class="title-grade">Total SCR</span>
+                                                    <span class="grade-num">7%</span>
+                                                    <div class="clearfix"></div>
+                                                    <div class="grade-area">
+                                                        <div class="grade"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- mobile -->
                                     </div>
-                            	</div>
+                                </div>
+                                <!-- полоса один отель -->
+
+                                <!-- полоса один отель -->
+                                <div class="hotel-wrapper">
+                                    <div class="hotel">
+                                        <!-- фото отеля -->
+                                        <div class="img">
+                                            <button class="rent">For Rent</button>
+                                            <button class="sale">For Sale</button>
+                                            <div class="img-info">
+                                                <div class="left">
+                                                    <span>Rating photos </span><span class="grade-num">4.2</span>
+                                                    <div class="grade-area">
+                                                        <div class="grade"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="right">
+                                                    <img src="images/little-img.png" alt="">
+                                                    <span>10</span>
+                                                    <img src="images/little-video.png" alt="">
+                                                    <span>2</span>
+                                                    <img src="images/3D.png" alt="">
+                                                    <span>1</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /фото отеля -->
+                                        <!-- о отеле -->
+                                        <div class="content-hotel">
+                                            <div class="content-hotel-static">
+                                                <!-- шапка отеля -->
+                                                <div class="hotel-head">
+                                                    <ul class="info green">
+                                                        <li>OPEN HOUSE</li>
+                                                        <li><img src="images/li3.png">12.04.16</li>
+                                                        <li><img src="images/li2.png">15:00-18:00</li>
+                                                    </ul>
+                                                    <div class="send-request">
+                                                        <button>SEND REQUEST</button>
+                                                    </div>
+                                                    <button class="view-more">VIEW MORE</button>
+                                                    <button class="compare green-compare"><div></div>COMPARE</button>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <!-- /шапка отеля -->
+                                                <div class="hotel-body">
+                                                    <table>
+                                                        <!-- информация -->
+                                                        <tr>
+                                                            <td>
+                                                                <div class="block">
+                                                                    <h4 class="title">LAS AMERICAS</h4>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>Adeje</td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>LA001</td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Publish:</td>
+                                                                            <td>7h</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Views:</td>
+                                                                            <td>8</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="block">
+                                                                    <h4 class="title">EL CORDONES</h4>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>Beach:</td>
+                                                                            <td>300m</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Walk Scope:</td>
+                                                                            <td>65</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Area:</td>
+                                                                            <td>1,5ga</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Sw.Pool:</td>
+                                                                            <td>0,03ga</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="block">
+                                                                    <h4 class="title">1 BED APARTMENT</h4>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>Sea view</td>
+                                                                            <td></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Total area:</td>
+                                                                            <td>54m<sup>2</sup></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Terrace:</td>
+                                                                            <td>15m<sup>2</sup></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Bed room:</td>
+                                                                            <td>21m<sup>2</sup></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Bed room:</td>
+                                                                            <td>21m<sup>2</sup></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Bed room:</td>
+                                                                            <td>21m<sup>2</sup></td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="block">
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <h4 class="title">ASK PRICE </h4>
+                                                                            </td>
+                                                                            <td>
+                                                                                <span class="price">243,000 &euro;</span>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Price M2:</td>
+                                                                            <td>3120 &euro;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Old Price:</td>
+                                                                            <td>255,000 &euro; <span class="minus-red">(-7%)</span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Bid Price:</td>
+                                                                            <td>210,000 &euro;</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>Sale Status:</td>
+                                                                            <td class="fast-red">Fast Sale</td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <!-- /информация -->
+                                                        <!-- баллы -->
+                                                        <tr>
+                                                            <td>
+                                                                <div class="general-grade">
+                                                                    <span class="title-grade">Total SCR</span>
+                                                                    <span class="grade-num">5,3</span>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="grade-area">
+                                                                        <div class="grade"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="object-grade">
+                                                                    <span class="title-grade">Total SCR</span>
+                                                                    <span class="grade-num">5,3</span>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="grade-area">
+                                                                        <div class="grade"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="apartment-grade">
+                                                                    <span class="title-grade">Total SCR</span>
+                                                                    <span class="grade-num">5,3</span>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="grade-area">
+                                                                        <div class="grade"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td>
+                                                                <div class="price-grade">
+                                                                    <span class="title-grade">Total SCR</span>
+                                                                    <span class="grade-num">7%</span>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="grade-area">
+                                                                        <div class="grade"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <!-- /баллы -->
+                                                    </table>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                        <!-- /о отеле -->
+                                        <!-- mobile -->
+                                        <div class="mobile" style="display:none;">
+                                            <div class="block">
+                                                <h4 class="title">LAS AMERICAS</h4>
+                                                <table>
+                                                    <tr>
+                                                        <td>Adeje</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>LA001</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Publish:</td>
+                                                        <td>7h</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Views:</td>
+                                                        <td>8</td>
+                                                    </tr>
+                                                </table>
+                                                <div class="price-grade">
+                                                    <span class="title-grade">Total SCR</span>
+                                                    <span class="grade-num">7%</span>
+                                                    <div class="clearfix"></div>
+                                                    <div class="grade-area">
+                                                        <div class="grade"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- mobile -->
+                                    </div>
+                                </div>
+                                <!-- полоса один отель -->
                             </div>
+                            <!-- результаты поиска -->
                         </div>
+                        <!-- отображение и работа с выборкой -->
                     </div>
                 </div>
             </div>
+            <!-- /область контента - ячейка -->
         </div>
     </div>
+    <!-- /wrapper -->
 </body>
 </html>

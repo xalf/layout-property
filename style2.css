@@ -90,7 +90,7 @@ header{
 	box-shadow: none;
 	background-color: #535C69;
 	border-radius: 0;
-	min-width: 70px;
+	min-width: 56px;
 }
 
 #topnav .navbar-right ul li{
@@ -236,7 +236,7 @@ header{
 
 .form-control{
 	border: 1px solid #E0E0E0;
-	height: 35px;
+	height: 32px;
 	padding-left: 10px;
 	width: 100%;
 }
@@ -343,7 +343,7 @@ header{
 	padding: 20px;
 }
 
-.graf .graf-head button{
+.graf .button-panel button{
 	background-color: #fff;
 	border: 1px solid #E0E0E0;
 	border-radius: 2px;
@@ -356,6 +356,10 @@ header{
 	padding: 2px 8px;
 	text-align: center;
 	vertical-align: middle;
+}
+
+.graf-head .buttons-sort{
+	float: right;
 }
 
 .graf-head button:last-child{
@@ -376,12 +380,12 @@ header{
 	margin: 10px 0px 15px 45px;
 }
 
-.graf .graf-head button:hover, .buttons-sort button:hover{
+.graf .button-panel button:hover, .buttons-sort button:hover{
 	background-color: #B9DEE3;
 	border: 1px solid #B9DEE3;
 }
 
-.graf .graf-head button:active, .buttons-sort button:active{
+.graf .button-panel button:active, .buttons-sort button:active{
 	background-color: #51ADB9;
 	border: 1px solid #51ADB9;
 	color: #fff;
@@ -399,6 +403,19 @@ header{
 .graf-head small{
 	color: #BDBDBD;
 	font-size: 23px;
+}
+
+.clear{
+	background-color: #BEBEBE;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 500;
+	float: right;
+	padding: 5px 25px;
+	text-align: center;
+	margin-left: 10px;
 }
 
 .graf-body{
@@ -470,12 +487,10 @@ header{
 	margin-top: 15px;
 }
 
-.result-head .buttons-sort button{
+.buttons-sort button{
 	background-color: #fff;
 	border: none;
-	border-right: 1px solid #E0E0E0; 
-	border-bottom: 1px solid #E0E0E0; 
-	border-top: 1px solid #E0E0E0; 
+	border: 1px solid #E0E0E0; 
 	color: #616161;
 	display: block;
 	font-size: 12px;
@@ -484,32 +499,17 @@ header{
 	padding: 5px 20px;
 }
 
-.result-head .buttons-sort button:first-child{
-	border-left: 1px solid #E0E0E0; 
-}
-
 
 .buttons-sort button:hover{
 	background-color: #B9DEE3;
-	border-top: 1px solid #B9DEE3;
-	border-right: 1px solid #B9DEE3;
-	border-bottom: 1px solid #B9DEE3;
+	border: 1px solid #B9DEE3;
 }
 
-.result-head .buttons-sort button:first-child:hover{
-	border-left: 1px solid #B9DEE3; 
-}
 
 .buttons-sort button:active{
 	background-color: #51ADB9;
-	border-top: 1px solid #51ADB9;
-	border-right: 1px solid #51ADB9;
-	border-bottom: 1px solid #51ADB9;
+	border: 1px solid #51ADB9;
 	color: #fff;
-}
-
-.result-head .buttons-sort button:first-child:active{
-	border-left: 1px solid #51ADB9; 
 }
 
 /* HOTEL */
@@ -671,6 +671,12 @@ vertical-align: top;
 	background-color: #2C8628;
 }
 
+.hotel-body .block .fast-red{
+	color: #E51C23;
+	font-size: 13px;
+	font-weight: 800;
+}
+
 .hotel-head img{
 	margin-right: 3px;
 	vertical-align: baseline;
@@ -764,7 +770,7 @@ vertical-align: top;
 
 .hotel-body>table>tbody>tr>td:first-child{
 	border: none;
-
+	padding-left: 0;
 }
 
 .hotel-body>table>tbody>tr{
@@ -828,7 +834,7 @@ vertical-align: top;
 .hotel-body>table>tbody>tr:first-child>td:last-child{
 	padding-right: 0;
 
-	min-width: 181px;
+	min-width: 187px;
 }
 
 sup{

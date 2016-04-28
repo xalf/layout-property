@@ -1,4 +1,13 @@
 @media(max-width: 1270px){
+	
+	.logo-area .brand{
+		width: 148px;
+	}
+
+	#topnav .navbar-left{
+		float: right;
+	}
+
 	#topnav .navbar-left ul{
 		position: absolute;
 		background-color: #535C69;
@@ -40,8 +49,28 @@
 		padding-right: 10px;
 	}
 
-	.view-more{
-		margin-right: 5px;
-		margin-left: 0;
+
+	.hotel-head .info li{
+		font-size: 11px;
+	}
+	.send-request button{
+		font-size: 11px;
+		padding: 4px 10px;
+	}
+
+	.hotel-head{
+		height: 35px;
+	}
+
+	.compare, .view-more{
+		margin: 4px;
+	}
+
+	.hotel-body>table>tbody>tr>td{
+		padding: 0 5px;
+	}
+
+	.hotel-body>table>tbody>tr:first-child>td:last-child{
+		min-width: 177px;
 	}
 }
