@@ -1,0 +1,168 @@
+@media(max-width: 860px){
+
+	.logo-area .brand{
+		width: 107px;
+	}
+	
+	.sidebar>h2:first-child{
+		margin-left: 5px; 
+	}
+
+	.first-column, .second-column{
+		padding: 0 5px;
+	}
+
+	.manager{
+		padding: 10px;
+	}
+
+
+	.manager img{
+		margin-right: 5px;
+		width: 100px;
+	}
+
+	.manager h2{
+		font-size: 19px;
+	}
+
+	.manager p{
+		font-size: 13px;
+	}
+
+	.mobile{
+		display: block;
+	}
+
+	.content-hotel{
+		display: none;
+	}
+
+	.hotel-wrapper{
+		display: block;
+	}
+
+	.hotel-head{
+		float: none;
+		height: 39px;
+	}
+	.mobile .info{
+		float: none;
+	}
+
+	.result .mobile .info .send-request{
+		float: right;
+		padding: 7px 10px;
+	}
+
+	.mobile .info li{
+		font-size: 14px;
+		padding: 10px 0 10px 15px;
+	}
+
+	.send-request{
+		float: right;
+		padding: 6px 10px;
+	}
+
+	.send-request button{
+		font-size: 12;
+		padding: 5px 10px;
+	}
+
+	.two-buttons{
+		background-color: #EEEEEE;
+	}
+
+	.compare, .view-more{
+		margin: 6px 4px;
+	}
+	
+	.mobile .block{
+		margin: 5px 15px 10px;
+	}
+
+	.mobile .general-grade{
+		margin-top: 15px;
+	}
+
+	.contacts{
+		float: none;
+		border-bottom: 1px solid #6d747f;
+		margin: 0 20px 5px;
+	}
+
+	.contacts p{
+		width: 50%;
+		padding: 0 0 15px;
+		margin-bottom: 5px;
+	}
+
+	.contacts p span, .contacts p a{
+		display: block;
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	.copyright{
+		float: none;
+		padding-left: 20px;
+	}
+
+	/* вторая страница  */
+
+
+	.fixed-sidebar .first-column, .fixed-sidebar .second-column{
+		width: 50%;
+	}
+
+	.top-wrapper, .num-inf, .slider-wrapper{
+		display: block;
+		width: 100%;
+	}
+
+	.fixed-sidebar .manager{
+		min-height: auto;
+	}
+
+	.inf-cell{
+		width: 25%;
+	}
+
+	.ratings{
+		position: static;
+	}
+
+	.open-house, .find-open-house{
+		width: 46%;
+		margin: 10px 0;
+		float: right;
+		min-height: 170px;
+
+	}
+
+	.open-house:nth-child(2n), .find-open-house:nth-child(2n){
+		float: left;
+	}
+
+	#expert-mode{
+		display: none;
+	}
+
+	.slider-legend .first-line button{
+		width: 33.333%;
+		margin-top: 0;
+	}
+
+	.slider-legend .first-line button:nth-child(4), .slider-legend .first-line button:nth-child(5){
+		width: 50%;
+	}
+
+	.table-control td:nth-child(1){
+		width: 50%;
+	}
+
+	.table-control td:nth-child(2), .table-control td:nth-child(3), .table-control th:last-child{
+		width: 25%;
+	}
+}

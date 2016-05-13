@@ -97,4 +97,56 @@
 	.general-grade, .object-grade, .apartment-grade, .price-grade{
 		margin-top: 7px;
 	}
+	.logo-h{
+		padding: 20px 0 20px 80px;
+	}
+
+	.logo-h h1{
+		font-size: 33px;
+	}
+
+	footer{
+		height: auto;
+	}
+
+	.footer-menu{
+		float: none;
+		display: block;
+		padding: 20px; 
+	}
+
+	.footer-menu li{
+		width: 33.333%;
+		text-align: center;
+		border: 1px solid #6d747f;
+	}
+
+	/* вторая страница */
+
+	.fixed-sidebar .sidebar{
+		position: static;
+		width: 100%;
+	}
+
+	.fixed-sidebar .first-column{
+		width: 38%;
+	}
+
+	.fixed-sidebar .second-column{
+		width: 60%;
+	}
+
+	.fixed-sidebar .manager{
+		margin-top: 20px;
+		min-height: 158px;
+	}
+
+	.sidebar .compare{
+		float: none;
+		margin-left: 15px;
+	}
+
+	.slider-legend .buttons-sort button{
+		padding: 3px 7px;
+	}
 }

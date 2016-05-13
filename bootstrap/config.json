@@ -360,17 +360,12 @@
     "@component-offset-horizontal": "180px"
   },
   "css": [
-    "tables.less",
     "forms.less",
     "buttons.less",
-    "glyphicons.less",
     "button-groups.less",
     "input-groups.less",
-    "badges.less",
-    "progress-bars.less",
-    "media.less",
-    "list-group.less",
-    "close.less",
+    "navs.less",
+    "pagination.less",
     "dropdowns.less",
     "tooltip.less"
   ],
@@ -388,5 +383,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://bootstrap-3.ru/customize.php?id=f0292d513128531e299e64f67b28e3b4"
+  "customizerUrl": "http://bootstrap-3.ru/customize.php?id=2132164820da237146ac26402874dd0f"
 }

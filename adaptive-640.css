@@ -1,0 +1,93 @@
+@media(max-width: 640px){
+	#topnav{
+		height: 47px;
+	}
+
+	#wrapper{
+		margin-top: 47px;
+	}
+
+	.logo-area .choise{
+		background-position: center;
+		height: 47px;
+		width: 80px;
+	}
+
+	.logo-area .brand{
+		background-position: 5px center;
+		height: 47px;
+		width: 90px;
+	}
+
+	#topnav .menu>a{
+		height: 46px;
+		padding: 15px;
+		width: 46px;
+	}
+
+	#topnav #flag>a{
+		padding: 13px 5px;
+	}
+
+	.graf{
+		display: none;
+	}
+
+	.first-column, .second-column{
+		float: none;
+		width: 100%;
+	}
+
+	.manager{
+		margin-top: 17px;
+	}
+
+	.page-num{
+		float: none;
+		margin: 20px auto 0;
+		width: 231px;
+	}
+
+	.static-content{
+		background-color: #fff; 
+	}
+
+	/* вторая страница  */
+	.fixed-sidebar .first-column, .fixed-sidebar .second-column{
+		width: 100%;
+	}
+
+	.open-house, .find-open-house{
+		width: 100%;
+		margin: 10px 0;
+		min-height: auto;
+	}
+
+	.description p{
+		width: 100%;
+	}
+
+	.price-table .name, .price-table .body-price-table,	.title-rating th:nth-child(3), .title-rating th:nth-child(4), .title-rating td:nth-child(3), .title-rating td:nth-child(4), .table th a, .th-h{
+		display: none;
+	}
+
+	.cur-price li:nth-child(2n){
+		margin: 0 25px 0 10px;
+	}
+	
+	.table-control td:nth-child(3),.table-control th:last-child{
+		width: 10%;
+	}
+
+	.table-control td:nth-child(2){
+		width: 30%;
+	}
+
+	.table-control td:nth-child(1){
+		width: 60%;
+	}
+
+	.table-control tr .grade-area{
+		display: none;
+	}
+}

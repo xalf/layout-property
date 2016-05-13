@@ -4,26 +4,39 @@
 		width: 148px;
 	}
 
-	#topnav .navbar-left{
+	#topnav .menu{
 		float: right;
 	}
 
-	#topnav .navbar-left ul{
+	#topnav .menu ul{
 		position: absolute;
 		background-color: #535C69;
 		border-radius: 0;
 	}
 
-	.navbar-left ul{
+	.menu ul{
 		display: none;
 	}
 
-	#topnav .navbar-left ul a{
+
+	#topnav .menu .pull-right>a{
+		height: 45px;
+	}
+
+	#topnav li>a{
+		padding: 14px 15px;
+	}
+
+	#topnav .menu ul a{
 		border: none;
 		width: 100%;
 	}
 
-	#topnav .navbar-left>a{
+	#topnav .menu ul li{
+		width: 100%;
+	}
+	
+	#topnav .menu>a{
 		display: block;
 		color:#fff;
 		height: 56px;
@@ -31,6 +44,16 @@
 		padding: 19px 15px;
 		top:0;
 		width: 56px;
+	}
+
+
+	#topnav .dropdown-menu>.registr{
+		width: 25%;
+	}
+
+
+	#topnav .menu>a{
+		display: block;
 	}
 
 	.static-sidebar {
@@ -72,5 +95,21 @@
 
 	.hotel-body>table>tbody>tr:first-child>td:last-child{
 		min-width: 177px;
+	}
+
+	/* Вторая страница */
+
+	.fixed-sidebar .sidebar{
+		width: 237px;
+	}
+
+	.logo-h{
+		background: url("images/pp.png") 3px 1px no-repeat;
+	    padding: 5px 0 5px 75px;
+	    height: 60px;
+	}
+
+	.slider-legend .first-line button{
+		min-width: auto;
 	}
 }

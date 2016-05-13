@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Outline Admin Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js.js"></script>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- header -->
+	<header id="topnav" class="navbar navbar-bluegray navbar-fixed-top">
+		<a class="logo-area">
+			<div class="choise"></div>
+			<div class="brand"></div>
+		</a>
+            <div class="dropdown" id="flag">
+                <a href="" role="button" data-toggle="dropdown">
+                    <img src="images/flagUK.png" alt="">
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation">
+                        <a href="" role="menuitem" tab-index="-1" target="_blank">
+                            <img src="images/flagRU.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        <div class="dropdown menu">
+            <a data-toggle="dropdown" class="fa fa-bars fa-lg" href="#" type="button"></a>
+    		<ul class=" dropdown-menu" role="menu">
+                <li role="presentation" class="registr pull-right"><a href="" class="glyphicon glyphicon-search"></a></li>
+                <li role="presentation" class="registr pull-right"><a href="" class="glyphicon glyphicon-envelope"></a></li>
+                <li role="presentation" class="registr pull-right"><a href="" class="glyphicon glyphicon-bell"></a></li>
+                <li role="presentation" class="registr pull-right"><a href="" class="glyphicon glyphicon-user"></a></li>
+                <li role="presentation" class="no-registr pull-right">
+                    <a href="">Registration</a>
+                </li>
+                <li role="presentation" class="no-registr pull-right">
+                    <a href="">Sign in</a>
+                </li>
+    			<li role="presentation" class="pull-left">
+    				<a href="" role="menuitem" >Property For Sale</a>
+    			</li>
+    			<li role="presentation" class="pull-left">
+                  <a href="" role="menuitem" >Property For Rent</a>
+                </li>
+                <li role="presentation" class="pull-left">
+                	<a href="" role="menuitem" >Residention Complexes</a>
+                </li>
+                <li role="presentation" class="pull-left">
+                	<a href="">Open House</a>
+                </li>
+                <li role="presentation" class="pull-left">
+                	<a href="" role="menuitem" >Compare
+    					<div class="number">2</div>
+                	</a>
+                </li>
+    		</ul>
+        </div>
+	</header>
+    <!-- /header -->
+    <!-- wrapper таблица-->
+	<div id="wrapper">
+        <!-- строка -->
+	    <div id="layout-static">
+            <!-- область сайдбара - ячейка -->
+	        <div class="static-sidebar-wrapper">
+	            <div class="static-sidebar fixed-sidebar">
+					<div class="sidebar">
+                        <div class="logo-h">
+                            <h1>Agency Avelta Group</h1>
+                        </div>
+						<div class="first-column"> 
+                            <h2>ASK PRICE:</h2>
+                            <p class="obj-price">180.000 &euro;</p>
+                            <button class="offer-price">OFFER PRICE</button>
+                            <button class="compare white-compare"><div></div>COMPARE</button>
+                            <input type="submit" value="REQUEST DETAILED INFORMATION">
+                            <input type="submit" value="ORDER OF THE INSPECTION OBJECT">
+                        </div>
+                        <div class="second-column">
+                            <div class="manager">
+                                <img src="images/malecostume.png" alt="">
+                                <h2>Request for manager</h2>
+                                <p>Our manager will pick the best deals for you.</p>
+                                <input type="submit" class="submit-control" value="SUBMIT REQUEST">
+                                <!-- <div class="clearfix"></div> -->
+                            </div>
+                            <div class="soc-web">
+                                <h2>Share with friends</h2>
+                                <div class="soc-icons">
+                                    <a href="" style="background: url(images/soc.png) no-repeat 0 0 ;"></a>
+                                    <a href="" style="background: url(images/soc.png) no-repeat -28px 0;"></a>
+                                    <a href="" style="background: url(images/soc.png) no-repeat -56px 0;"></a>
+                                    <a href="" style="background: url(images/soc.png) no-repeat -84px 0;"></a>
+                                    <a href="" style="background: url(images/soc.png) no-repeat -112px 0;"></a>
+                                    <a href="" style="background: url(images/soc.png) no-repeat -140px 0;"></a>  
+                                </div>
+                                <input type="submit" class="submit-control" value="OR SEND AN EMAIL">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+					</div>
+	            </div>
+	        </div>
+            <!-- /область сайдбара - ячейка -->
+            <!-- область контента - ячейка -->
+            <div class="static-content-wrapper">
+                <div class="static-content">
+                    <div class="page-content">
+                        <!-- margin -->
+                        <div class="margin">
+                            <!-- Главная информация -->
+                            <div class="all-inf">
+                                <h1>Название комлекса <small>N 0001</small></h1>
+                                <!-- слайдер + цифры -->
+                                <div class="top-wrapper">
+                                    <!-- цифры -->
+                                    <div class="num-inf">
+                                        <div class="inf-cell">
+                                            <h4>Населённый пункт:</h4>
+                                            <span>Las Americas</span>
+                                        </div>
+                                        <div class="inf-cell">
+                                            <h4>Район:</h4>
+                                            <span>Adeje</span>
+                                        </div>
+                                        <div class="inf-cell">
+                                            <h4>Продажа студии:</h4>
+                                            <span class="weight">180,000 &euro;</span>
+                                        </div>
+                                        <div class="inf-cell">
+                                            <h4>Аренда студии</h4>
+                                            <span class="weight">4,500 &euro;</span>
+                                        </div>
+                                        <div class="inf-cell">
+                                            <h4>Кол-во видов:</h4>
+                                            <span>3</span>
+                                        </div>
+                                        <div class="inf-cell">
+                                            <h4>Расстояние до моря: </h4>
+                                            <span>300 m</span>
+                                        </div>
+                                        <div class="inf-cell">
+                                            <h4>Общая площадь:</h4>
+                                            <span>2500 m<sup>2</sup></span>
+                                        </div>
+                                        <div class="inf-cell">
+                                            <h4>Бассеины:</h4>
+                                            <span>5</span>
+                                        </div>
+                                        <div class="inf-cell">
+                                            <h4>Опубликовано:</h4>
+                                            <span>21.04.16</span>
+                                        </div>
+                                        <div class="inf-cell">
+                                            <h4>Просмотров:</h4>
+                                            <span>878</span>
+                                        </div>
+                                        <div class="ratings">
+                                            <div class="total-rating">
+                                                <span class="title-grade">Total rating:</span>
+                                                <div class="grade-area">
+                                                    <div class="grade"></div>
+                                                </div>
+                                                <span class="grade-num">6.2</span>
+                                            </div>
+                                            <div class="photo-rating">
+                                                <span class="title-grade">Photo rating:</span>
+                                                <div class="grade-area">
+                                                    <div class="grade"></div>
+                                                </div>
+                                                <span class="grade-num">4.5</span>
+                                            </div>
+                                        <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /цифры -->
+                                    <!-- слайдер с кнопками -->
+                                    <div class="slider-wrapper">
+                                        <div class="slider"></div>
+                                        <div class="slider-legend">
+                                            <div class="buttons-sort first-line">
+                                                <button>Карта</button>
+                                                <button>Видео</button>
+                                                <button>3D съёмка</button>
+                                                <button>Все фотографии <span>(59)</span></button>
+                                            </div>
+                                            <div id="expert-mode">
+                                                <span>Expert mode:</span>
+                                                <div class="bootstrap-switch">
+                                                    <div class="bootstrap-switch-container">
+                                                        <span class="bootstrap-switch-handle-on">ON</span>
+                                                        <label class="bootstrap-switch-label">&nbsp;</label>
+                                                        <span class="bootstrap-switch-handle-off bootstrap-switch-default">OFF</span>
+                                                        <input class="bootstrap-switch" type="checkbox" data-size="small" data-on-color="success" data-off-color="default">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="buttons-sort second-line">
+                                                <button>Бассеины <span>(5)</span></button>
+                                                <button>Территория <span>(2)</span></button>
+                                                <button>Вид из окна <span>(2)</span></button>
+                                                <button>Аппартаменты <span>(2)</span></button>
+                                            </div>
+                                                <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                    <!-- /слайдер с кнопками -->
+                                </div>
+                                <!-- /слайдер + цифры -->
+                                <div class="open-house-inf">
+                                    <h2>Open House<a href="">All Open House</a></h2>
+                                    <div class="find-open-house">
+                                        <p>Send an inquiry to view with your date and time</p>
+                                        <div class="calendar find-select">
+                                            <button>
+                                                <i class="fa fa-calendar"></i>
+                                            </button>
+                                            <input type="text">
+                                        </div>
+                                        <div class="clock find-select">
+                                            <button>
+                                                <i class="fa fa-clock-o"></i>
+                                            </button>
+                                            <input type="text">
+                                        </div>
+                                        <br>
+                                        <input type="submit" value="SEND REQUEST">
+                                    </div>
+                                    <div class="open-house orange">
+                                        <div class="data"><i class="fa fa-calendar"></i>12.04.16</div>
+                                        <div class="time"><i class="fa fa-clock-o"></i>15:00-18:00</div>
+                                        <hr>
+                                        <p>
+                                            Wine, snacks, presentation of othe objects.
+                                        </p>
+                                        <button>ENROLL</button>
+                                    </div>
+                                    <div class="open-house yellow">
+                                        <div class="data"><i class="fa fa-calendar"></i>12.04.16</div>
+                                        <div class="time"><i class="fa fa-clock-o"></i>15:00-18:00</div>
+                                        <hr>
+                                        <p>
+                                            Wine, snacks, presentation of othe objects.
+                                        </p>
+                                        <button>ENROLL</button>
+                                    </div>
+                                    <div class="open-house green">
+                                        <div class="data"><i class="fa fa-calendar"></i>12.04.16</div>
+                                        <div class="time"><i class="fa fa-clock-o"></i>15:00-18:00</div>
+                                        <hr>
+                                        <p>
+                                            Wine, snacks, presentation of othe objects.
+                                        </p>
+                                        <button>ENROLL</button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="description">
+                                    <h2>Description</h2>
+                                    <p>
+                                        The apartment is located in a residence with concierge at the sea shore. The building is equipped with parking and cellar. The apartment is necessary to carry out repair work. The interior <a href="">space apartment consists</a> of a bright living room with access to a <a href="">large terrace of 32 m²</a> with views of the sea and the port, 2 bedrooms with access to a second terrace 34 m² with sea and mountain views, separate kitchen, spacious bathroom. Location The residence is located in a quiet and <a href="">secluded</a> area near the port, shops and restaurants.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- /главная информация -->
+                            <!-- таблицы -->
+                            <div class="tables">
+                                <!-- Таблицы с ценой -->
+                                <div class="price-table table">
+                                    <div class="head-price-table">
+                                        <h3 class="name">Current price and statistics on the subjects of prices</h3>
+                                        <div class="cur-price">
+                                            <ul>
+                                                <li>Current price:</li>
+                                                <li>180,000 &euro;</li>
+                                                <li>From:</li>
+                                                <li>12.04.16</li>
+                                            </ul>
+                                            <button>DELAITED INFO</button>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                    <div class="body-price-table">
+                                        <table>
+                                            <tr>
+                                                <th>Status <a class="fa fa-angle-down"></a></th>
+                                                <th>Date <a class="fa fa-ellipsis-h"></a></th>
+                                                <th>Property price (&euro;) <a class="fa fa-ellipsis-h"></th>
+                                                <th>Price m<sup>2</sup> (&euro;) <a class="fa fa-ellipsis-h"></th>
+                                                <th>Initsiator <a class="fa fa-ellipsis-h"></th>
+                                                <th>Note <a class="fa fa-ellipsis-h"></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Open</td>
+                                                <td>15.05.16</td>
+                                                <td>180,000</td>
+                                                <td>25,000</td>
+                                                <td>Agency</td>
+                                                <td>Cool!</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Open</td>
+                                                <td>15.05.16</td>
+                                                <td>180,000</td>
+                                                <td>25,000</td>
+                                                <td>Agency</td>
+                                                <td>Cool!</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="price-table table">
+                                    <div class="head-price-table">
+                                        <h3 class="name">Offrs buyers</h3>
+                                        <div class="cur-price">
+                                            <ul>
+                                                <li>Current price:</li>
+                                                <li>180,000 &euro;</li>
+                                                <li>From:</li>
+                                                <li>12.04.16</li>
+                                            </ul>
+                                            <button>DELAITED INFO</button>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                    <div class="body-price-table">
+                                        <table>
+                                            <tr>
+                                                <th>Status <a href="" class="fa fa-angle-down"></a></th>
+                                                <th>Date <a class="fa fa-ellipsis-h"></th>
+                                                <th>Property price (&euro;) <a class="fa fa-ellipsis-h"></th>
+                                                <th>Price m<sup>2</sup> (&euro;) <a class="fa fa-ellipsis-h"></th>
+                                                <th>Initsiator <a class="fa fa-ellipsis-h"></th>
+                                                <th>Note <a class="fa fa-ellipsis-h"></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Open</td>
+                                                <td>15.05.16</td>
+                                                <td>180,000</td>
+                                                <td>25,000</td>
+                                                <td>Agency</td>
+                                                <td>Cool!</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Open</td>
+                                                <td>15.05.16</td>
+                                                <td>180,000</td>
+                                                <td>25,000</td>
+                                                <td>Agency</td>
+                                                <td>Cool!</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- /Таблицы с ценой -->
+                                <h2>The main object of the total rating</h2>
+                                <table class="table title-rating">
+                                    <tr>
+                                        <th>Title rating</th>
+                                        <th>The ordinal position</th>
+                                        <th>Initsiator</th>
+                                        <th>Total</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Total rating</td>
+                                        <td>9.76</td>
+                                        <td>432</td>
+                                        <td>
+                                            <span class="grade-num">0.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade grade-1"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Facility rating</td>
+                                        <td>6.90</td>
+                                        <td>345</td>
+                                       <td>
+                                            <span class="grade-num">1.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade grade-2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rating housing complex</td>
+                                        <td>2.98</td>
+                                        <td>134</td>
+                                        <td>
+                                            <span class="grade-num">2.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade grade-3"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <h2>Group expert evaluation of the object</h2>
+                                <div class="overall-head table-control">
+                                    <table>
+                                        <tr>
+                                            <td>Name of group</td>
+                                            <td>Parameter</td>
+                                            <td>Ball <span class="th-h">assessment</span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <table class="table table-control">
+                                    <tr>
+                                        <th>General characteristics<a href="">View more <i class="fa fa-angle-down"></i></a></th>
+                                        <th></th>
+                                        <th>
+                                            <span class="grade-num">3.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade grade-4"></div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>Living area 1 Bedroom Apartment</td>
+                                        <td>53 m<sup>2</sup></td>
+                                        <td>
+                                            <span class="grade-num">4.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade grade-5"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>View</td>
+                                        <td>Yes</td>
+                                       <td>
+                                            <span class="grade-num">5.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade grade-6"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rooms qry</td>
+                                        <td>Satisfactorily</td>
+                                        <td>
+                                            <span class="grade-num">6.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade grade-7"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <a href="">View more <i class="fa fa-angle-down"></i></a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="table table-control">
+                                    <tr>
+                                        <th>Living room <a href="">View more <i class="fa fa-angle-down"></i></a></th>
+                                        <th></th>
+                                        <th>
+                                            <span class="grade-num">7.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade  grade-8"></div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>Wall decoration</td>
+                                        <td>53 m<sup>2</sup></td>
+                                        <td>
+                                            <span class="grade-num">8.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade  grade-9"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Floor covering</td>
+                                        <td>Yes</td>
+                                       <td>
+                                            <span class="grade-num">9.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade  grade-10"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cushioned furnityre</td>
+                                        <td>Satisfactorily</td>
+                                        <td>
+                                            <span class="grade-num">9.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <a href="">View more <i class="fa fa-angle-down"></i></a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="table table-control">
+                                    <tr>
+                                        <th>Kitchen <a href="">View more <i class="fa fa-angle-down"></i></a></th>
+                                        <th></th>
+                                        <th>
+                                            <span class="grade-num">9.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade"></div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>Wall decoration</td>
+                                        <td>53 m<sup>2</sup></td>
+                                        <td>
+                                            <span class="grade-num">9.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Floor covering</td>
+                                        <td>Yes</td>
+                                       <td>
+                                            <span class="grade-num">9.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cushioned furnityre</td>
+                                        <td>Satisfactorily</td>
+                                        <td>
+                                            <span class="grade-num">9.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <a href="">View more <i class="fa fa-angle-down"></i></a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="table table-control little-form-control">
+                                    <tr>
+                                        <th>Kitchen</th>
+                                        <th>
+                                            <a href="">View more <i class="fa fa-angle-down"></i></a>
+                                        </th>
+                                        <th>
+                                            <span class="grade-num">9.89</span>
+                                            <div class="grade-area">
+                                                <div class="grade"></div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </table>
+                            </div>
+                            <!-- /таблицы -->
+                        </div>
+                        <!-- /margin -->
+                    </div>
+                </div>
+            </div>
+            <!-- /область контента - ячейка -->
+        </div>
+    </div>
+    <!-- /wrapper -->
+
+
+    <footer>
+        <div class="footer-menu">
+            <ul>
+                <li>About us</li>
+                <li>Contract offer</li>
+                <li>Privacy policy</li>
+                <div class="clearfix"></div>
+            </ul>
+        </div>
+        <div class="contacts">
+            <p>Tel: <span>8 800 555 35 35</span></p>
+            <p>E-mail:<a href="">hello@smart-tchoice.com</a></p>
+            <div class="clearfix"></div>
+        </div>
+        <div class="copyright">
+            All rights reserved &copy; 2015-2016 Smart Thoice
+        </div>
+        <div class="clearfix"></div>
+    </footer>
+</body>
+</html>

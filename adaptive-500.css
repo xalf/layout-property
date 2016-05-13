@@ -1,0 +1,133 @@
+@media(max-width: 500px){
+
+	.result{
+		padding: 10px;
+	}
+
+	.mobile .info li{
+		display: inline-block;
+	}
+
+	.result .mobile .info .send-request{
+		float: none;
+	}
+
+	.hotel, .hotel .img{
+		display: block;
+	}
+
+	.hotel .img{
+		height: 250px;
+		width: 100%;
+		max-width: 500%;
+	}
+
+	.hotel-wrapper>.mobile{
+		height: auto;
+	}
+
+	.logo-h{
+		padding: 23px 0 23px 80px;
+	}
+
+	.logo-h h1{
+		font-size: 22px;
+	}
+
+	.buttons-sort button{
+		font-size: 11px;
+		width: 25%;
+		padding: 3px;
+	}
+
+	.result-head h2 a{
+		margin-left: 0;
+	}
+
+	.contacts p span, .contacts p a{
+		font-size: 16px;
+	}
+	
+	.footer-menu li{
+		padding: 7px 5px;
+		font-size: 11px;
+	}
+
+	/* вторая страница */
+
+	.inf-cell{
+		width: 50%;
+	}
+	.margin{
+		padding: 0;
+	}
+
+	.all-inf{
+		border: none;
+		border-radius: 0;
+	}
+
+	.cur-price button{
+		float: none;
+	}
+
+	.tables h2{
+		margin: 20px 5px;
+	}
+
+	.table-control td, .table-control th{
+		padding: 10px 7px;
+	}
+
+	.overall-head{
+		border-radius: 0;
+	}
+
+	.little-form-control th:last-child{
+		display: none;
+	}
+
+	.little-form-control th:first-child{
+		width: 100%;
+		display: block;
+		border: none;
+	}
+
+	.little-form-control th:nth-child(2){
+		padding: 0;
+		width: 100%;
+		display: block;
+		border: none;
+	}
+
+	.little-form-control th a{
+		display: block;
+		padding: 10px 7px;
+		background-color: #fff;
+		float: none;
+	}
+}
+
+@media(max-width: 380px){
+	.cur-price{
+		padding: 10px;
+	}
+
+	.hotel .img{
+		height: 200px;
+	}
+
+	.buttons-sort button{
+		width: 50%;
+	}
+
+	.slider-legend .first-line button:nth-child(4), .slider-legend .first-line button:nth-child(5){
+		height: 46px;
+	}
+
+	/* вторая страница */
+
+	.cur-price li:nth-child(2n){
+		margin: 0 10px;
+	}
+}
